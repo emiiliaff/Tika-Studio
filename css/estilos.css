@@ -100,6 +100,33 @@ nav a {
     left: 82px;
 }
 
+/* mediaquery */
+ @media (max-width: 480px) {
+    .Mhome {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: repeat(3, 33%);
+        column-gap: 17%;
+        grid-template-areas: 
+            "Thome Portada"
+            "Thome Portada"
+            "Thome2 Portada";
+    }
+
+    .Thome {
+        grid-area: Thome;
+        display: inline-block;
+        margin-top: 50px;
+        font-size: 50px;
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-weight: 900;
+        height: auto;
+        width: 40%;
+        line-height: 0.85;
+        margin-left: 36px;
+    }
+ }
+
 /* section index */
 
 section.work{
