@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,900;1,400;1,500&family=Lora:wght@600&display=swap');
+
+/* font-family: 'Hanken Grotesk', sans-serif; */
+/* font-family: 'Lora', serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* inicio header+navbar */
+
+header {
+    background-color: #F5F5F5;
+    height: 135px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 75px;
+    width: auto;
+    margin: 64px 0px 0px 64px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 64px 64px 0px 0px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* fin header+navbar */
+
+/* main index */
+
+.Mhome {
+    background-color: #F5F5F5;
+    height: 600px;
+    margin-bottom: 	85px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(3, 202px);
+    column-gap: 17%;
+    grid-template-areas: 
+        "Thome Portada"
+        "Thome Portada"
+        "Thome2 Portada";
+}
+
+
+.Thome {
+    grid-area: Thome;
+    display: inline-block;
+    position: absolute;
+    margin-top: 50px;
+    font-size: 150px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 900;
+    height: auto;
+    width: 40%;
+    line-height: 0.85;
+    margin-left: 36px;
+}
+
+.Thome span {
+    font-size: 100px;
+}
+
+.portada {
+    grid-area: Portada;
+    display: inline-block;
+    position: relative;
+    height: 605px;    
+    width: auto;
+    /* left: 57%;
+    top: 0; */
+}
+
+.Thome2 {
+    grid-area: Thome2;
+    position: absolute;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    height: auto;
+    width: 30%;
+    top: 550px;
+    left: 82px;
+}
+
+/* section index */
+
+section.work{
+    position: relative;
+    height: 1800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoswork {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 450px);
+    column-gap: 10%;
+    row-gap: 5%;
+    /* grid-template-areas: 
+        /* "item1 item2 item3"
+        "item4 item2 item3"
+        "item4 item5 item6"
+        "item7 item5 item6"
+        "item7 item8      "
+        "      item8      "; */ */
+}
+
+.item1 {
+    /* grid-area: item1; */
+    color: #000000;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    width: 55%;
+    margin: 20px;
+}
+
+/* .item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+}
+
+.item5 {
+    grid-area:  item5;
+}
+
+.item6 {
+    grid-area: item6;
+}
+
+.item7 { 
+    grid-area: item7;
+}
+
+.item8 {
+    grid-area: item8;
+} */
+
+.item img {
+    height: auto;
+    width: 300px;
+}
+
+/* footer = en todas el sitioweb */
+
+footer {
+    position: absolute;
+    background-color: #6666669d;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer > div {
+    margin-top: 90px;
+}
+
+footer p {
+    display: block;
+    font-family: 'Lora', serif;
+    margin-bottom: 20px;
+    
+    
+    color: #F5F5F5;
+
+}
+
+footer h2 {
+    font-family: 'Lora', serif;
+    margin-bottom: 10px;
+  
+    color: #F5F5F5;
+}
+
+footer h3 {
+    font-family: 'Lora', serif;
+   
+    margin-bottom: 10px;
+    color: #F5F5F5;
+} 
+
+footer a {
+    text-decoration: underline;
+    color: #F5F5F5;
+}
+
+
+div .copy {
+    color: #F5F5F5;
+    align-self: flex-end;
+}
+
+/* Contacto */
+/* maincontacto */
+
+.Mcontacto {
+    background-color: #F5F5F5;
+    height: 1500px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+div .Tcontacto {
+    font-size: 55px;
+    font-family: 'Lora', serif;
+    font-weight: 900;
+    margin-top: 45px;
+    width: 85px;
+}
+
+form {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 600;
+    margin-top: 45px;
+}
+
+form label span {
+    font-weight: 800;
+    color: #FF3333;
+}
+
+form p {
+    margin: 10px;
+    font-weight: 600;
+}
+
+input[type=text] {
+    width: 150%;
+    padding: 12px 20px;
+    margin: 10px;
+    border: 2px solid #3333CC;
+    border-radius: 4px;
+    
+}
+
+input[type=text]:focus {
+    border: 3px solid #000033;
+}
+
+input[type=date] {
+    width: 150%;
+    padding: 12px 20px;
+    margin: 10px;
+    border: 2px solid #3333CC;
+    border-radius: 4px;
+}
+
+input[type=date]:focus {
+    border: 3px solid #000033;
+}
+
+input[type=checkbox] {
+    margin: 10px;
+}
+
+.checkbox {
+    font-weight: 400;
+}
+
+.textarea {
+    width: 150%;
+    padding: 12px 20px;
+    margin: 10px;
+    border: 2px solid #3333CC;
+    border-radius: 4px;
+}
+
+.textarea:focus{
+    border: 3px solid #000033;
+ }
+
+input[type=submit] {
+    position: relative;
+    left: 450px;
+    width: 50%;
+    background-color: #000033;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #3333CC;
+}
+
+.secfotogaleria {
+    background-color: #F5F5F5;
+}
+
+.Tfoto {
+    position: relative;
+    top: 101px;
+    font-size: 130px;
+    font-family: 'Lora', serif;
+    font-weight: 900;
+    height: auto;
+    width: 40%;
+    line-height: 0.85;
+    margin-left: 36px;
+}
+
+.secservicios {
+    position: relative;
+    background-color: #F5F5F5;
+    height: 800px
+}
+
+.Tservicios {
+    position: relative;
+    top: 100px;
+    margin-left: 64px;
+    font-size: 130px;
+    font-family: 'Lora', serif;
+    font-weight: 900;
+}
+
+.Pservicios {
+    position: relative;
+    top: 200px;
+    right: 25px;
+    margin-left: 450px;
+    font-size: 27px;
+    font-family: 'Hanken Grotesk', sans-serif; 
+    font-weight: 400;
+}
+
+ /* Acerca De  */
+
+.secacerca {
+    position: relative;
+    background-color: #F5F5F5;
+    height: 800px
+}
+
+.Tacerca {
+    position: relative;
+    top: 100px;
+    margin-left: 64px;
+    font-size: 130px;
+    font-family: 'Lora', serif;
+    font-weight: 900;
+}
+
+.Pacerca {
+     position: relative;
+    top: 200px;
+    right: 25px;
+    margin-left: 450px;
+    font-size: 27px;
+    font-family: 'Hanken Grotesk', sans-serif; 
+    font-weight: 400;
+}
+
+
+
+.carrusel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    width: 80%;
+}
+
+.sectiontexto {
+    margin-left: 20px;
+}
