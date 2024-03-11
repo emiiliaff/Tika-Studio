@@ -45,6 +45,8 @@ nav a {
 
 /* main index */
 
+
+
 .Mhome {
     background-color: #F5F5F5;
     height: 600px;
@@ -59,6 +61,11 @@ nav a {
         "Thome2 Portada";
 }
 
+@media (max-width: 420px) {
+    .Mhome {
+        background-color: #3333CC;
+    }
+}
 
 .Thome {
     grid-area: Thome;
@@ -74,9 +81,12 @@ nav a {
     margin-left: 36px;
 }
 
+
 .Thome span {
     font-size: 100px;
 }
+
+
 
 .portada {
     grid-area: Portada;
@@ -87,6 +97,8 @@ nav a {
     /* left: 57%;
     top: 0; */
 }
+
+
 
 .Thome2 {
     grid-area: Thome2;
@@ -100,8 +112,9 @@ nav a {
     left: 82px;
 }
 
+
 /* mediaquery */
- @media (max-width: 480px) {
+ /* @media (max-width: 480px) {
     .Mhome {
         display: grid;
         grid-template-columns: 40% 60%;
@@ -116,7 +129,6 @@ nav a {
     .Thome {
         grid-area: Thome;
         font-size: 100px;
-      
     }
 
     .portada {
@@ -126,13 +138,9 @@ nav a {
 
     .Thome2 {
         grid-area: Thome2;
-        font-weight: 400;
-        height: auto;
-        width: 30%;
-        top: 550px;
-        left: 82px;
+        width: 200px;
     }
- }
+ } */
 
 /* section index */
 
