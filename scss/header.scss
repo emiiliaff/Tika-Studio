@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,900;1,400;1,500&family=Lora:wght@600&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$colorbase: #f5f5f5;
+$colortexto: black;
+$fontuno: 'Lora, serif';
+$fontdos: 'Hanken Grotesk', sans-serif;
+
+header {
+    background-color: $colorbase;
+    height: 135px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+        
+    img{
+        height: 75px;
+        width: auto;
+        margin: 64px 0px 0px 64px;
+        }
+    
+
+    nav {
+        ul {
+            list-style: none;
+        
+             li {
+                display: inline-block;
+                padding: 15px;  
+                font-family: $fontuno;
+                font-weight: 600;
+                font-size: 15px;
+                margin: 64px 0px 0px 64px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $colortexto;
+        }
+    }
+}
