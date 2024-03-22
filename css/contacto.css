@@ -88,4 +88,10 @@ main .formulario form input[type=submit]:hover {
   background-color: #3333CC;
 }
 
+@media (max-width: 700px) {
+  main {
+    background-color: #FF3333;
+  }
+}
+
 /*# sourceMappingURL=contacto.css.map */
