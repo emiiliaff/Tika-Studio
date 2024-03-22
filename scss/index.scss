@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,900;1,400;1,500&family=Lora:wght@600&display=swap");
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$colorbase: #f5f5f5;
+$colortexto: black;
+$fontuno: 'Lora, serif';
+$fontdos: 'Hanken Grotesk', sans-serif;
+
+header {
+    background-color: $colorbase;
+    height: 135px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+        
+    img{
+        height: 75px;
+        width: auto;
+        margin: 64px 0px 0px 64px;
+        }
+    
+
+    nav {
+        ul {
+            list-style: none;
+        
+             li {
+                display: inline-block;
+                padding: 15px;  
+                font-family: $fontuno;
+                font-weight: 600;
+                font-size: 15px;
+                margin: 64px 0px 0px 64px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $colortexto;
+        }
+    }
+}
+
+main {
+    background-color: $colorbase;
+    height: 600px;
+    margin-bottom: 85px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(3, 202px);
+    column-gap: 17%;
+    grid-template-areas: 
+    "Thome Portada"
+    "Thome Portada"
+    "Thome2 Portada";
+
+        .Thome{
+            grid-area: Thome;
+            display: inline-block;
+            margin-top: 50px;
+            margin-left: 36px;
+            height: auto;
+            width: 40%;
+            position: absolute;
+
+                h1 {
+                    font-size: 150px;
+                    font-family: $fontdos;
+                    font-weight: 900;
+                    line-height: 0.85;
+
+                    span{
+                        font-size: 100px;
+                    }
+                }
+        }
+
+        .portada {
+            grid-area: Portada;
+            display: inline-block;
+            position: relative;
+            height: 605px;
+            width: auto;
+        }
+
+        .Thome2 {
+            grid-area: Thome2;
+            position: absolute;
+            font-family: $fontdos;
+            font-size: 15px;
+            font-weight: 400;
+            height: auto;
+            width: 30%;
+            top: 550px;
+            left: 82px;
+        }
+}
+
+section {
+     position: relative;
+     height: 1800px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+        .fotoswork {
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            grid-template-rows: repeat(3, 450px);
+            column-gap: 10%;
+            row-gap: 5%;
+
+            .item {
+               
+                .item1 {
+                    color: $colortexto;
+                    font-family: $fontdos;
+                    font-size: 40px;
+                    font-weight: 600;
+                    width: 55%;
+                    margin: 20px;
+                }
+                
+                img {
+                    height: auto;
+                    width: 300px;
+                }
+            }
+        }
+}
+
